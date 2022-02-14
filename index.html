@@ -407,6 +407,10 @@
             </div>
 
             <div class="col">
+              <div class="alert alert-success alert-dismissible fade show d-none my-alert" role="alert">
+                <strong>Thank you!</strong> We have received your message.
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+              </div>
               <form name="Kesan-Pesan-Human" class="Kesan-Pesan-Human">
                 <div class="row">
                   <div class="col">
@@ -431,14 +435,13 @@
                       <label for="name">Message</label>
                       <textarea class="form-control" name="message" rows="15" required></textarea>
                     </div>
-                    <div class="my-3">
-                      <div class="loading">Loading</div>
-                      <div class="error-message"></div>
-                      <div class="sent-message">Your message has been sent. Thank you!</div>
-                      <div class="text-center"><button type="submit">Send Message</button></div>
+                      <button type="submit" class="btn-kirim">Send message</button> 
                       
-                    </div>
-                    
+                      <button class="btn btn-primary btn-loading d-none" 
+                      type="submit" disabled>
+                        <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+                        Loading...
+                      </button>
               </form>
             </div>
           </div>
@@ -478,12 +481,27 @@
     <script>
       const scriptURL = 'https://script.google.com/macros/s/AKfycbwIG5oB0h6eRD2f3GJuz9qB3Mm70_-hAr0Spv8tFp_ME6JFBlTRUu4wfSNlJPF0ms8n/exec';
       const form = document.forms['Kesan-Pesan-Human'];
-
+      const btnKirim = document.querySelector('.btn-kirim');
+      const btnLoading = document.querySelector('.btn-loading');
+      const myAlert = document.querySelector('.my-alert');
+      
       form.addEventListener('submit', (e) => {
         e.preventDefault();
+        // ketika tombol submit di klik
+        // tampilkan tombol loading, hilangkan tombol kirim
+        btnLoading.classList.toggle('d-none');
+        btnKirim.classList.toggle('d-none');
         fetch(scriptURL, { method: 'POST', body: new FormData(form) })
-          .then((response) => console.log('Success!', response))
-          .catch((error) => console.error('Error!', error.message));
+          .then((response) => {
+            // tampilkan tombol kirim, hilangkan tombol loading
+            btnLoading.classList.toggle('d-none');
+            btnKirim.classList.toggle('d-none');
+            // tampilkan alert
+            myAlert.classList.toggle('d-none');
+            // reset formnya
+            form.reset();
+            console.log('Success!', response);
+        }).catch((error) => console.error('Error!', error.message));
       });
     </script>
   </body>
