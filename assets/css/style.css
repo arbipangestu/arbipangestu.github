@@ -1,25 +1,16 @@
-/**
-* Template Name: iPortfolio - v3.7.0
-* Template URL: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
 
-/*--------------------------------------------------------------
-# General
---------------------------------------------------------------*/
 body {
   font-family: 'Open Sans', sans-serif;
   color: #272829;
 }
 
 a {
-  color: #149ddd;
+  color: #980a0a;
   text-decoration: none;
 }
 
 a:hover {
-  color: #37b3ed;
+  color: #ed3737;
   text-decoration: none;
 }
 
@@ -42,7 +33,7 @@ h6 {
   right: 15px;
   bottom: 15px;
   z-index: 996;
-  background: #149ddd;
+  background: #980a0a;
   width: 40px;
   height: 40px;
   border-radius: 50px;
@@ -54,7 +45,7 @@ h6 {
   line-height: 0;
 }
 .back-to-top:hover {
-  background: #2eafec;
+  background: #ec2e2e;
   color: #fff;
 }
 .back-to-top.active {
@@ -113,7 +104,7 @@ h6 {
   transition: 0.3s;
 }
 #header .profile .social-links a:hover {
-  background: #149ddd;
+  background: #980a0a;
   color: #fff;
   text-decoration: none;
 }
@@ -174,7 +165,7 @@ h6 {
 .nav-menu .active i,
 .nav-menu .active:focus i,
 .nav-menu li:hover > a i {
-  color: #149ddd;
+  color: #980a0a;
 }
 
 /* Mobile Navigation */
@@ -187,7 +178,7 @@ h6 {
   font-size: 24px;
   transition: all 0.4s;
   outline: none !important;
-  background-color: #149ddd;
+  background-color: #980a0a;
   color: #fff;
   width: 40px;
   height: 40px;
@@ -247,7 +238,7 @@ h6 {
   color: #fff;
   padding-bottom: 4px;
   letter-spacing: 1px;
-  border-bottom: 3px solid #149ddd;
+  border-bottom: 3px solid #980a0a;
 }
 @media (min-width: 1024px) {
   #hero {
@@ -287,7 +278,7 @@ section {
   margin-bottom: 20px;
   padding-bottom: 20px;
   position: relative;
-  color: #173b6c;
+  color: #6c1717;
 }
 .section-title h2::after {
   content: '';
@@ -295,7 +286,7 @@ section {
   display: block;
   width: 50px;
   height: 3px;
-  background: #149ddd;
+  background: #980a0a;
   bottom: 0;
   left: 0;
 }
@@ -309,7 +300,7 @@ section {
 .about .content h3 {
   font-weight: 700;
   font-size: 26px;
-  color: #173b6c;
+  color: #6c1717;
 }
 .about .content ul {
   list-style: none;
@@ -326,7 +317,7 @@ section {
 .about .content ul i {
   font-size: 16px;
   margin-right: 5px;
-  color: #149ddd;
+  color: #980a0a;
   line-height: 0;
 }
 .about .content p:last-child {
@@ -346,7 +337,7 @@ section {
 .facts .count-box i {
   display: block;
   font-size: 44px;
-  color: #149ddd;
+  color: #980a0a;
   float: left;
   line-height: 0;
 }
@@ -363,19 +354,19 @@ section {
   margin: 0 0 0 60px;
   font-family: 'Raleway', sans-serif;
   font-size: 14px;
-  color: #122f57;
+  color: #571212;
 }
 .facts .count-box a {
   font-weight: 600;
   display: block;
   margin-top: 20px;
-  color: #122f57;
+  color: #571212;
   font-size: 15px;
   font-family: 'Poppins', sans-serif;
   transition: ease-in-out 0.3s;
 }
 .facts .count-box a:hover {
-  color: #1f5297;
+  color: #971f1f;
 }
 
 /*--------------------------------------------------------------
@@ -408,7 +399,7 @@ section {
   width: 1px;
   height: 10px;
   transition: 0.9s;
-  background-color: #149ddd;
+  background-color: #980a0a;
 }
 
 /*--------------------------------------------------------------
@@ -424,7 +415,7 @@ section {
 .resume .resume-item {
   padding: 0 0 20px 20px;
   margin-top: -2px;
-  border-left: 2px solid #1f5297;
+  border-left: 2px solid #971f1f;
   position: relative;
 }
 .resume .resume-item h4 {
@@ -462,7 +453,7 @@ section {
   left: -9px;
   top: 0;
   background: #fff;
-  border: 2px solid #1f5297;
+  border: 2px solid #971f1f;
 }
 
 /*--------------------------------------------------------------
@@ -494,7 +485,7 @@ section {
 }
 .portfolio #portfolio-flters li:hover,
 .portfolio #portfolio-flters li.filter-active {
-  color: #149ddd;
+  color: #980a0a;
 }
 .portfolio #portfolio-flters li:last-child {
   margin-right: 0;
@@ -532,15 +523,15 @@ section {
   color: #fff;
   font-size: 28px;
   text-align: center;
-  background: rgba(20, 157, 221, 0.75);
+  background: rgba(221, 20, 20, 0.75);
   transition: 0.3s;
   width: 50%;
 }
 .portfolio .portfolio-wrap .portfolio-links a:hover {
-  background: rgba(20, 157, 221, 0.95);
+  background: rgba(221, 20, 20, 0.75);
 }
 .portfolio .portfolio-wrap .portfolio-links a + a {
-  border-left: 1px solid #37b3ed;
+  border-left: 1px solid #ed3737;
 }
 .portfolio .portfolio-wrap:hover::before {
   top: 0;
@@ -572,10 +563,10 @@ section {
   height: 12px;
   background-color: #fff;
   opacity: 1;
-  border: 1px solid #149ddd;
+  border: 1px solid #980a0a;
 }
 .portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: #149ddd;
+  background-color: #980a0a;
 }
 .portfolio-details .portfolio-info {
   padding: 30px;
@@ -622,7 +613,7 @@ section {
 }
 .contact .info i {
   font-size: 20px;
-  color: #149ddd;
+  color: #980a0a;
   float: left;
   width: 44px;
   height: 44px;
@@ -644,7 +635,7 @@ section {
   padding: 0 0 10px 60px;
   margin-bottom: 20px;
   font-size: 14px;
-  color: #173b6c;
+  color: #6c1717;
 }
 .contact .info .email p {
   padding-top: 5px;
@@ -667,13 +658,13 @@ section {
   margin-right: 10px;
 }
 .contact .info .social-links a:hover {
-  background: #149ddd;
+  background: #980a0a;
   color: #fff;
 }
 .contact .info .email:hover i,
 .contact .info .address:hover i,
 .contact .info .phone:hover i {
-  background: #149ddd;
+  background: #980a0a;
   color: #fff;
 }
 .contact .Kesan-Pesan-Human {
@@ -748,7 +739,7 @@ section {
   padding: 10px 15px;
 }
 .contact .Kesan-Pesan-Human button[type='submit'] {
-  background: #149ddd;
+  background: #980a0a;
   border: 0;
   padding: 10px 24px;
   color: #fff;
@@ -756,7 +747,7 @@ section {
   border-radius: 4px;
 }
 .contact .Kesan-Pesan-Human button[type='submit']:hover {
-  background: #37b3ed;
+  background: #ed3737;
 }
 @-webkit-keyframes animate-loading {
   0% {
